@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Login</title>
-    <link rel="stylesheet" href="../../public/assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="../../public/assets/vendors/css/vendor.bundle.base.css">
-    <link rel="stylesheet" href="../../public/assets/css/style.css">
-    <link rel="shortcut icon" href="../../public/assets/images/favicon.png" />
-  </head>
-  <body>
+
     <div class="container-scroller">
       <div class="container-fluid page-body-wrapper full-page-wrapper">
         <div class="row w-100 m-0">
@@ -37,11 +26,3 @@
         </div>
       </div>
     </div>
-    <script src="../../public/assets/vendors/js/vendor.bundle.base.js"></script>
-    <script src="../../public/assets/js/off-canvas.js"></script>
-    <script src="../../public/assets/js/hoverable-collapse.js"></script>
-    <script src="../../public/assets/js/misc.js"></script>
-    <script src="../../public/assets/js/settings.js"></script>
-    <script src="../../public/assets/js/todolist.js"></script>
-  </body>
-</html>

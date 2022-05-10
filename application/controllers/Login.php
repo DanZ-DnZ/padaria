@@ -8,13 +8,16 @@
             }
             //carrega o formulário de Registro
             public function Registro(){
-                $this->load->view('login/register');
+                $this->template->load("templates/loginTemp", "login/register");
             }
             //carrega o formulario para registro de senha
             public function RegistrarSenha(){
-                $this->load->view('login/registrarsenha');
+                $this->template->load("templates/loginTemp", "login/registrarsenha");
             }
-
+            //carrega o form de login
+            public function login(){
+                $this->template->load("templates/loginTemp", "login/login");
+            }
             public function SalvarRegistro(){
                 $num1 = rand(0, 9);
                 $num2 = rand(0, 9);
