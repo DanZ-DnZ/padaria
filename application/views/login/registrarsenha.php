@@ -1,6 +1,8 @@
-<?php
-  
-?>
+<?php 
+      echo validation_errors();
+
+      echo form_open('form');
+    ?>
     <div class="container-scroller">
       <div class="container-fluid page-body-wrapper full-page-wrapper">
         <div class="row w-100 m-0">
@@ -11,14 +13,17 @@
                   <div class="form-group">
                     <label>E-mail</label>
                     <input type="text" class="form-control p_input" name="email">
+                    <?php echo form_error('email'); ?>
                   </div>
                   <div class="form-group">
                     <label>Senha</label>
                     <input type="password" class="form-control p_input" name="senha">
+                    <?php echo form_error('senha'); ?>
                   </div>
                   <div class="form-group">
                     <label>Chave</label>
                     <input type="text" class="form-control p_input" name="chave">
+                    <?php echo form_error('chave'); ?>
                   </div>
                   <div class="text-center">
                     <button type="submit" class="btn btn-primary btn-block enter-btn">Registrar Senha</button>

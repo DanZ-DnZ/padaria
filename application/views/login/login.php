@@ -1,4 +1,8 @@
+<?php 
+      echo validation_errors();
 
+      echo form_open('form');
+?>
     <div class="container-scroller">
       <div class="container-fluid page-body-wrapper full-page-wrapper">
         <div class="row w-100 m-0">
@@ -6,14 +10,15 @@
             <div class="card col-lg-4 mx-auto">
               <div class="card-body px-5 py-5">
                 <h3 class="card-title text-left mb-3">Logar</h3>
-                <form method="POST" action="index.php/login/">
                   <div class="form-group">
                     <label>E-mail</label>
                     <input type="email" class="form-control p_input" name="email">
+                    <?php echo form_error('email'); ?>
                   </div>
                   <div class="form-group">
                     <label>Senha</label>
-                    <input type="password" class="form-control p_input" name="senha"> 
+                    <input type="password" class="form-control p_input" name="senha">
+                    <?php echo form_error('senha'); ?>
                   </div>
                   <div class="text-center">
                     <button type="submit" class="btn btn-primary btn-block enter-btn">Login</button>

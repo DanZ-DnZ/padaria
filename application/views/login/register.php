@@ -13,10 +13,12 @@
                   <div class="form-group">
                     <label>Nome</label>
                     <input type="text" class="form-control p_input" name="nome">
+                    <?php echo form_error('nome'); ?>
                   </div>
                   <div class="form-group">
                     <label>E-mail</label>
                     <input type="email" class="form-control p_input" name="email">
+                    <?php echo form_error('email'); ?>
                   </div>
                   <div class="text-center">
                     <button type="submit" class="btn btn-primary btn-block enter-btn">Registrar</button>

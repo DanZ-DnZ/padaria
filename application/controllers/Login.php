@@ -8,14 +8,67 @@
             }
             //carrega o formulário de Registro
             public function Registro(){
+                $config = array(
+                    array(
+                        'field' => 'nome',
+                        'label' => 'Nome',
+                        'rules' => 'required'
+                    ),
+                    array(
+                        'field' => 'email',
+                        'label' => 'E-mail',
+                        'rules' => 'required'
+                    )
+                );
+
+                $this->form_validation->set_rules($config);
+
                 $this->template->load("templates/loginTemp", "login/register");
             }
             //carrega o formulario para registro de senha
             public function RegistrarSenha(){
+
+                $config = array(
+                    array(
+                        'field' => 'email',
+                        'label' => 'E-mail',
+                        'rules' => 'required'
+                    ),
+                    array(
+                        'field' => 'senha',
+                        'label' => 'Senha',
+                        'rules' => 'required'
+                    ),
+                    array(
+                        'field' => 'chave',
+                        'label' => 'Chave',
+                        'rules' => 'required'
+                    )
+
+                );
+
+                $this->form_validation->set_rules($config);
+
                 $this->template->load("templates/loginTemp", "login/registrarsenha");
             }
             //carrega o form de login
             public function login(){
+
+                $config = array(
+                    array(
+                        'field' => 'email',
+                        'label' => 'E-mail',
+                        'rules' => 'required'
+                    ),
+                    array(
+                        'field' => 'senha',
+                        'label' => 'Senha',
+                        'rules' => 'required'
+                    )
+                );
+
+                $this->form_validation->set_rules($config);
+
                 $this->template->load("templates/loginTemp", "login/login");
             }
             public function SalvarRegistro(){
